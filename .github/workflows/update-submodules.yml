@@ -48,7 +48,7 @@ jobs:
           git submodule update --recursive --remote
 
       - name: Setup Python 3.10.4
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10.4'
 
