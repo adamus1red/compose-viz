@@ -22,7 +22,7 @@ RUN \
     cd /compose-viz && \
     pyinstaller --onefile --name cpv ./compose_viz/__main__.py
 
-FROM alpine:3.16 as release
+FROM alpine:3.22 as release
 
 COPY --from=builder /compose-viz/dist/cpv /usr/local/bin/cpv
 
